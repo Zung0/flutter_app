@@ -10,7 +10,7 @@ class MyApp extends StatelessWidget {
   final router = GoRouter(
     routes: [
       GoRoute(path: '/', builder: (_, __) => MyLoginPage()),
-      GoRoute(path: '/home/:email', builder: (_, state) {return MyHomePage();},),
+      GoRoute(path: '/home', builder: (_, state) {return MyHomePage();},),
     ],
   );
 
